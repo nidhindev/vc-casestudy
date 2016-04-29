@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-<h1>Case Study for Various Cluster</h1>
-<p>Please provide the case study and expectations</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>VC case study</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Case Study for Various Cluster</h1>
+                <p>Please provide the case study and expectations</p>
+            </div>
+            <div class="row">
+                <h2>Time limit</h2>
+                <p>
+                    The time limit for <strong>developer</strong>  is 1 day.<br>
+                    (see below).
+                </p><h2>Setup</h2>
+                <p>
+                    Mock webservice can be found <a href="https://bitbucket.org/vc-dev/mock-webservices.git" target="_blank">here</a>
+                    All the details required to start the mock and how to use/test it can be found in the included readme.
+                </p>
+                <h2>Assignment</h2>
+                <ul>
+                    <li>Create jms message which can hold person with name, adresss, a <strong>country</strong> name from where he/she want to tarvel</li>
+                    <li>Post this message using Apache MQ</li>
+                    <li>Enhance this application such way that, it can consume the message posted in apache MQ server</li>
+                    <li>Use the country from input message to request the webservice, which will provide list of airport codes</li>
+                    <li>Tag these airport codes to the person and save it to a database (h2/ oracle/ mongo)</li>
+                    <li>Create a UI which shows the names all the peopple in database</li>
+                    <li>On clicking on any Person's name, the airport code taged to him should be visible on the screen</li>
+                </ul>
+                <h3>Good to see</h3>
+                <ul>
+                    <li>Exception handling</li>
+                    <li>Logging of services and error scenario</li>
+                </ul>
+            </div>
+        </div>
+    </body>
 </html>
